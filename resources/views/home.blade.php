@@ -6,11 +6,13 @@ Home
 
 @section('content')
 <div class="container">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         @forelse($trips as $trip)
             <div class="col">
                 <div class="card shadow">
-                    <img src="{{$trip->image}}" alt="{{$trip->place}}" class="img-fluid rounded-top">
+                    <a href="{{route('trip.show', $trip)}}">
+                        <img src="{{$trip->image}}" alt="{{$trip->place}}" class="img-fluid rounded-top">
+                    </a>
                     <div class="card-body d-flex flex-column ">
                         <h3>{{$trip->place}}</h3>
                         <p>{{$trip->description}}</p>
