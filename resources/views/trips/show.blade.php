@@ -19,10 +19,10 @@ Home
                     <img src="{{$trip->image}}" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://picsum.photos/200/300" alt="Second slide">
+                    <img class="img_linked" src="https://arenalmanoa.com/wp-content/uploads/2022/02/Tripadvisor-Award-LOGO-wide.jpg" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://picsum.photos/300/400" alt="Third slide">
+                    <img class="img_linked" src="https://rentalsunited.com/site/assets/files/1189/premierpartner-web-booking.png" alt="Third slide">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
@@ -45,6 +45,4 @@ Home
 </div>
 @endsection
 
-@section('js_link')
-<script src="{{asset('js/bootstrap.js')}}"></script>
-@endsection
+

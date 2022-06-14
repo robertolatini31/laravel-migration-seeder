@@ -12187,7 +12187,7 @@ fieldset:disabled .btn {
 
 .carousel img {
   width: 100%;
-  height: 500px;
+  height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
 }
