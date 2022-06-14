@@ -1,5 +1,5 @@
 <?php
-use App\Models\Trip;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $trips = Trip::all();
-    dd($trips);
-    return view('welcome');
-});
+Route::get('/', 'PageController@index')->name('home');
+Route::get('/trips', 'TripController@index')->name('trip.index');
+Route::get('/trips/{trip}', 'TripController@index')->name('trip.show');
